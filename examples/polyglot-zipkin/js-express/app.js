@@ -62,7 +62,7 @@ app.post(apiPrefix + '/createUser', function (req, resp) {
     let user = req.body;
 
     // console.log(req);
-    postData(user, 'http://dropwizard:3000/dropwizard/users');
+    //postData(user, 'http://dropwizard:3000/dropwizard/users');
     postData(user, 'http://wildfy-swarm:3003/wildfly-swarm/users');
 
     console.log('User: ', user, " created!");
