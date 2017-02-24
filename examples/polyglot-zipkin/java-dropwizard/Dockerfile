@@ -31,8 +31,8 @@ RUN mvn package
 
 # create user (mysql should not run as root)
 RUN useradd -m app-user
-RUN chown -R app-user $APP_HOME
-USER app-user
+#RUN chown -R app-user $APP_HOME
+#USER app-user
 
 EXPOSE 3000
 
